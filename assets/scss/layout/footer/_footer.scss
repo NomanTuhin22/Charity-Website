@@ -1,0 +1,159 @@
+@use "../../utils/" as *;
+
+.tp-footer {
+  &-bg-img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-blend-mode: luminosity;
+    opacity: 0.08;
+    background-size: cover;
+  }
+  &-shap {
+    &-01 {
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    &-02 {
+      top: 0;
+      left: 184px;
+      @media #{$xxll} {
+        top: 10px;
+        left: 44px;
+      }
+      @media #{$xl} {
+        top: -5px;
+        left: 38px;
+      }
+      @media #{$lg,$md,$xs} {
+        left: -7px;
+      }
+    }
+    &-03 {
+      top: 86px;
+      right: 325px;
+      @media #{$xxlm} {
+        top: 90px;
+        right: 100px;
+      }
+      @media #{$xxllm} {
+        top: 90px;
+        right: 230px;
+      }
+      @media #{$xl} {
+        right: 43px;
+      }
+      @media #{$lg} {
+        top: 115px;
+        right: 2px;
+      }
+      @media #{$md} {
+        right: 20px;
+      }
+      @media #{$xs} {
+        top: 200px;
+        right: 10px;
+      }
+    }
+    &-04 {
+      right: -85px;
+      bottom: -43px;
+    }
+    &-05 {
+      left: 41px;
+      bottom: 50px;
+      @media #{$xxll} {
+        bottom: 21px;
+      }
+      @media #{$xl} {
+        left: 19px;
+        bottom: 0;
+      }
+      @media #{$lg} {
+        left: 5px;
+        bottom: -3px;
+      }
+      @media #{$md,$sm,$xs} {
+        left: 0;
+        bottom: 0px;
+      }
+    }
+  }
+  &-social-title {
+    color: #fff;
+    letter-spacing: 1.2;
+    line-height: 1.2;
+  }
+  &-social {
+    & a {
+      display: inline-block;
+      border-radius: 12px;
+      width: 44px;
+      height: 44px;
+      background: #fff;
+      text-align: center;
+      line-height: 41px;
+    }
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+  }
+  &-widget {
+    @media #{$xl} {
+      maring-left: 74px;
+    }
+    & ul {
+      & li {
+        list-style-type: none;
+        & a {
+          font-weight: 500;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.7);
+          line-height: 2;
+        }
+      }
+    }
+  }
+  &-info-p {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  &-cta {
+    & a {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 144%;
+      color: #fff;
+      display: inline-block;
+    }
+  }
+  &-mail-info {
+    margin-bottom: 13px;
+  }
+  &-ml {
+    margin-left: -45px;
+    @media #{$lg,$md,$xs} {
+      margin-left: 0;
+    }
+  }
+  &-copyright {
+    & p {
+      font-family: var(--tp-font-heading);
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: -0.02em;
+      & a {
+        font-weight: 600;
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+  }
+  &-seprator {
+    border: 1px solid rgba(248, 243, 231, 0.06);
+  }
+}

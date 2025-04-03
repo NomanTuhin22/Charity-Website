@@ -1,0 +1,29 @@
+@use "../../utils/" as *;
+
+.tpservices {
+  padding: 50px 15px;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 4px solid #ff5555;
+  @include tp-transition;
+  &_icon {
+    margin-bottom: 36px;
+  }
+  &_title {
+    font-family: var(--tp-font-heading);
+    margin-bottom: 32px;
+  }
+  &-margin {
+    margin-top: -240px;
+    @media #{$xs} {
+      margin-top: -300px;
+    }
+  }
+  &:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    box-shadow: 0 20px 60px 0 rgba(41, 28, 3, 0.1);
+  }
+}

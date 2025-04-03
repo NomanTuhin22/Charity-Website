@@ -1,0 +1,22 @@
+@use "../../utils/" as *;
+
+.tp-tab {
+  &-title {
+    font-size: 50px;
+    @media #{$xs} {
+      font-size: 39px;
+    }
+  }
+  &-br {
+    & br {
+      @media #{$lg,$md,$xs} {
+        display: none;
+      }
+    }
+  }
+  &-img {
+    @media #{$lg,$md,$xs} {
+      padding-left: 0;
+    }
+  }
+}

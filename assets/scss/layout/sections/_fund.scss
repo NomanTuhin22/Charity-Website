@@ -1,0 +1,128 @@
+@use "../../utils/" as *;
+.tp-fund {
+  &-area {
+    padding-bottom: 120px;
+    @media #{$xs} {
+      padding-bottom: 95px;
+    }
+  }
+  .tpabout-section-back-title {
+    bottom: 35px;
+    @media #{$xs} {
+      bottom: 95px;
+    }
+  }
+  &-heading-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    @media #{$xs} {
+      font-size: 39px;
+    }
+  }
+  &-arrow {
+    padding: 17px 25px;
+    background-color: #cfcfcf;
+  }
+  &-swiper-slider {
+    box-shadow: 0 36px 16px -24px rgba(18, 16, 24, 0.08);
+  }
+  &-meta {
+    & svg {
+      margin-right: 4px;
+    }
+    & span {
+      font-size: 14px;
+      color: #85838b;
+    }
+  }
+  &-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  &-padding {
+    padding: 20px 37px 16px 0;
+  }
+  &-progress {
+    --bs-progress-height: 8px;
+    --bs-progress-bg: rgba(18, 16, 24, 0.1);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: var(--tp-theme-color);
+    margin-bottom: 13px;
+  }
+  &-lable {
+    position: relative;
+    background: var(--tp-theme-color);
+    margin-bottom: 10px;
+    padding: 7px 6px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #121018;
+    line-height: 1;
+    margin-left: 75%;
+    bottom: 2px;
+    transform: translateX(-65%);
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 5px 0 5px;
+      border-color: var(--tp-theme-color) transparent transparent transparent;
+      transform: rotate(0deg);
+    }
+  }
+  &-amount {
+    & label {
+      color: #56605d;
+      display: block;
+      margin-bottom: 2px;
+      line-height: 1;
+    }
+    & span {
+      color: #121018;
+      font-weight: 700;
+      font-size: 18px;
+      display: block;
+    }
+  }
+  &-slider-active {
+    margin-right: -575px;
+  }
+  &-btn-prev {
+    background: #f2f0ec;
+    border: 1px solid rgba(18, 16, 24, 0.1);
+  }
+  &-btn-next {
+    background: #121018;
+    border: 1px solid rgba(18, 16, 24, 0.1);
+  }
+  &-bottom-text {
+    & p {
+      font-family: var(--tp-font-heading);
+      font-size: 24px;
+      text-align: center;
+      color: #5a5860;
+    }
+    & a {
+      color: #121018;
+      font-weight: 700;
+      text-decoration: underline;
+      display: inline-block;
+    }
+  }
+}
+.tp-cta-content {
+  padding-left: 60px;
+  @media #{$xs} {
+    padding-left: 30px;
+  }
+}

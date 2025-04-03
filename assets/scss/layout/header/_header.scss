@@ -1,0 +1,139 @@
+@use "../../utils/" as *;
+
+.tp-header {
+  &-transparent {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    right: 0;
+  }
+  &-container {
+    max-width: 1424px;
+    &-radius {
+      padding-right: 5px;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+    }
+  }
+  &-logo-box {
+    flex: 0 0 auto;
+    &-shap {
+      position: relative;
+      & svg {
+        position: absolute;
+        top: 0;
+        left: -1px;
+        height: 100%;
+        @media #{$md} {
+          margin-left: -5px;
+        }
+      }
+    }
+    &-logo {
+      width: 195px;
+      padding-top: 17px;
+      @media #{$xs} {
+        padding-bottom: 13px;
+      }
+      & a {
+        position: relative;
+        z-index: 1;
+      }
+      .tp-header-main-logo {
+        @media #{$md} {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &-menu {
+    & nav {
+      & ul {
+        margin: 0;
+        padding: 0;
+        & li {
+          position: relative;
+          list-style: none;
+          & a {
+            display: inline-block;
+            padding: 21px 20px;
+            font-family: var(--tp-font-body);
+            font-weight: 600;
+          }
+          &:hover {
+            & > a {
+              color: var(--tp-theme-color);
+            }
+            & > .home-sub-menu {
+              top: 100%;
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+          & .home-sub-menu {
+            position: absolute;
+            top: 105%;
+            left: 0;
+            width: 220px;
+            padding: 18px 0;
+            @include tp-transition();
+            visibility: hidden;
+            opacity: 0;
+            & li {
+              display: block;
+              margin-right: 0;
+              & .home-sub-menu {
+                top: 0%;
+                left: 102%;
+              }
+              &:hover {
+                & > .home-sub-menu {
+                  left: 100%;
+                }
+              }
+              & a {
+                display: block;
+                padding: 3px 28px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+    &-right {
+      gap: 20px;
+      &-phone {
+        & a {
+          font-family: var(--tp-font-body);
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 39px;
+          color: #063d30;
+          & svg {
+            margin-right: 5px;
+          }
+        }
+      }
+      &-btn {
+        padding: 5px 0px 5px 5px;
+      }
+    }
+  }
+
+  &-toggle {
+    font-size: 30px;
+    margin: 5px;
+    @media #{$lg} {
+      margin: 20px;
+    }
+  }
+}

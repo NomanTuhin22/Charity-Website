@@ -1,0 +1,50 @@
+@use "../../utils/" as *;
+
+.tp-event {
+  &-bg-img {
+    background-repeat: no-repeat;
+    height: 340px;
+    width: 42%;
+    bottom: 89px;
+    border-radius: 0 20px 20px 0;
+    @media #{$md,$sm,$xs} {
+      position: static;
+      width: 100%;
+      background-size: cover;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &-items {
+    margin-bottom: 13px;
+  }
+  &-date {
+    margin-top: 27px;
+    margin-bottom: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-right: 1px solid rgba(18, 16, 24, 0.1);
+  }
+  &-content {
+    & h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    & span {
+      font-weight: 400;
+      font-size: 15px;
+      color: #454449;
+      line-height: 1;
+    }
+    .margin-r-l {
+      margin-right: 8px;
+    }
+  }
+}

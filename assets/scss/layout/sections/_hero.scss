@@ -1,0 +1,95 @@
+@use "../../utils/" as *;
+
+.tp-hero {
+  &-area {
+    padding-top: 290px;
+    background-repeat: no-repeat;
+    height: 1144px;
+    @media #{$xs} {
+      padding-top: 235px;
+    }
+  }
+  &-sub-title {
+    font-size: 50px;
+    color: var(--tp-theme-color);
+    line-height: 1;
+  }
+  &-title {
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: -3.6px;
+    @media #{$lg,$md} {
+      font-size: 92px;
+    }
+    @media #{$xs} {
+      font-size: 70px;
+      line-height: 1.1;
+    }
+  }
+  &-vedio {
+    & a {
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      fill: rgba(255, 255, 255, 0.06);
+      stroke: #fff;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px 0 rgba(17, 17, 45, 0.1);
+      border: 2px solid aliceblue;
+      display: inline-block;
+      line-height: 102px;
+      text-align: center;
+    }
+  }
+  &-shap {
+    &-one {
+      position: absolute;
+      top: 37.8%;
+      @media #{$xxlm} {
+        top: 14.8%;
+        left: 1.2%;
+      }
+      @media #{$xl} {
+        top: 12.8%;
+        left: 88%;
+      }
+      @media #{$lg,$md} {
+        top: 12.8%;
+        left: 85%;
+      }
+      @media #{$md} {
+        left: 82%;
+      }
+      @media #{$xs} {
+        top: 12%;
+        right: 0px;
+      }
+    }
+    &-two {
+      position: absolute;
+      bottom: 28.5%;
+      left: 6.4%;
+      @media #{$xl} {
+        bottom: 26.5%;
+        left: 2.4%;
+      }
+      @media #{$lg,$md} {
+        bottom: 25.5%;
+        left: 3.4%;
+      }
+      @media #{$md} {
+        bottom: 22.5%;
+      }
+    }
+    &-down {
+      position: absolute;
+      bottom: 88px;
+      height: 39px;
+    }
+  }
+  &-m-top-left {
+    @media #{$xs} {
+      margin: 25px 0 0 5px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@use "../../utils/" as *;
+
+.tpabout {
+  &-shap {
+    &-one {
+      left: 94px;
+      top: 26%;
+      mix-blend-mode: exclusion;
+      @media #{$xxlm} {
+        left: 5px;
+      }
+    }
+    &-two {
+      top: 3%;
+      right: -234px;
+      @media #{$xl} {
+        top: 0;
+      }
+      &-team-shap {
+        top: 0;
+        @media #{$xl} {
+          top: -30px;
+        }
+        @media #{$xs} {
+          top: -35px;
+          right: -212px;
+        }
+      }
+    }
+  }
+  &-vr-title {
+    position: absolute;
+    top: 20%;
+    right: -39.5%;
+    font-size: 130px;
+    font-weight: 600;
+    margin: 0;
+    color: #e0deda;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    @media #{$xl} {
+      right: -40.4%;
+    }
+    @media #{$lg} {
+      right: -28%;
+    }
+    @media #{$md} {
+      right: -42.5%;
+    }
+  }
+  &-counter {
+    position: absolute;
+    bottom: 90px;
+    right: -130px;
+    @media #{$xs} {
+      bottom: 35px;
+      right: 15px;
+    }
+  }
+  &-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    left: 0;
+    right: 0;
+    padding-right: 67px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    & h2 {
+      font-size: 90px;
+    }
+    & h6 {
+      letter-spacing: 0;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  &-fact {
+    &-box {
+      padding: 19px 16px;
+    }
+    &-img {
+      margin-right: 12px;
+    }
+    &-box-info {
+      & p {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 0;
+      }
+      & h4 {
+        margin-bottom: 4px;
+      }
+    }
+    &-shap {
+      top: 10%;
+      left: -54px;
+      max-width: inherit;
+      mix-blend-mode: multiply;
+      @media #{$xl} {
+        left: -60px;
+      }
+      @media #{$md} {
+        left: -20px;
+      }
+    }
+  }
+}

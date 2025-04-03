@@ -1,0 +1,37 @@
+@use "../utils/" as *;
+
+.tpabout {
+  &-sub-title {
+    font-family: var(--tp-font-sub-heading-body);
+    font-size: 30px;
+    color: var(--tp-pink-color);
+    line-height: 60px;
+  }
+  &-section-title {
+    font-size: 60px;
+    margin-bottom: 21px;
+    @media #{$xs} {
+      font-size: 39px;
+    }
+    &-blog {
+      font-size: 80px;
+      @media #{$xs} {
+        font-size: 50px;
+      }
+    }
+  }
+  &-section-back-title {
+    font-weight: 600;
+    font-size: 280px;
+    background: linear-gradient(180deg, #e0deda 0%, #f2f0ec 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &-2 {
+      bottom: -59px;
+      @media #{$xs} {
+        bottom: -62px;
+      }
+    }
+  }
+}

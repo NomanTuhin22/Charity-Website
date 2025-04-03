@@ -1,0 +1,127 @@
+@use "../../utils/" as *;
+
+.tp-blog {
+  &-content {
+    padding-top: 80px;
+    @media #{$xs} {
+      padding-top: 40px;
+    }
+  }
+  &-bg {
+    border-radius: 0 20px 20px 0;
+    @media #{$lg,$md,$sm,$xs} {
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+    }
+  }
+  &-col-gap {
+    margin-bottom: 24px;
+  }
+  &-thum {
+    & a {
+      & img {
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+      }
+    }
+  }
+  &-meta {
+    & span {
+      font-size: 16px;
+      color: var(--tp-event-color);
+      font-weight: 400;
+    }
+  }
+  &-title {
+    font-size: 26px;
+    line-height: 123%;
+    letter-spacing: -0.04em;
+  }
+  &-info {
+    margin-left: 25px;
+    @media #{$xs} {
+      margin-left: 0;
+    }
+  }
+  &-btn {
+    & a {
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      color: var(--tp-dark-heading);
+      margin-right: 10px;
+      & svg {
+        margin-left: 5px;
+      }
+    }
+  }
+  &-bottom-title {
+    line-height: 1.1;
+    & br {
+      @media #{$xs} {
+        display: none;
+      }
+    }
+  }
+  &-bottom-btn {
+    padding: 20px 30px;
+  }
+  &-thum {
+    & img {
+      max-width: inherit;
+    }
+  }
+  &-m-xs-b {
+    @media #{$xs} {
+      margin-bottom: 50px;
+    }
+  }
+}
+.tp-blog-bg.p-absolute {
+  width: 738px;
+  height: 900px;
+  background-size: cover;
+  top: 27%;
+  left: 0;
+  bottom: 0;
+  @media #{$xxlm} {
+    width: 580px;
+  }
+  @media #{$xxllm} {
+    width: 665px;
+  }
+  @media #{$xl} {
+    width: 474px;
+  }
+  @media #{$lg,$md,$xs} {
+    position: static;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-position: center;
+  }
+
+  &-container-1400 {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    @media #{$md,$sm,$xs} {
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+    }
+  }
+}

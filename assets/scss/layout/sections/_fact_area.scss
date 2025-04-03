@@ -1,0 +1,33 @@
+@use "../../utils/" as *;
+
+.tp-fact {
+  &-card-continer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media #{$lg,$md} {
+      margin-left: 100px;
+    }
+    @media #{$md} {
+      margin-left: 50px;
+    }
+  }
+  @media #{$lg} {
+    width: 50%;
+  }
+  &-item {
+    padding-left: 28px;
+    & h2 {
+      font-size: 80px;
+      font-weight: 400;
+      color: var(--tp-dark-heading);
+    }
+    & p {
+      font-weight: 300px;
+      padding-bottom: 5px;
+    }
+  }
+  &-border {
+    border-left: 2px solid var(--tp-theme-color);
+  }
+}
